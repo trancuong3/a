@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>alicebob</title>
+</head>
+<body>
+<script>
+    let a=[];
+    let b=[];
+    let counta=0;
+    let countb=0;
+
+    for(let j=1;j<=3;j++) {
+        let c = prompt("nhập số điểm alce lần thứ "+ j);
+        let d = prompt("nhập số điểm bob lần thứ"+ j);
+        a.push(c);
+        b.push(d);
+    }
+    for(let i=0;i<a.length;i++)
+    {
+        if(a[i]>b[i])
+        {
+            counta++;
+        }
+        if(a[i]<b[i])
+        {
+            countb++;
+        }
+    }
+    alert("alice có "+counta+"điểm");
+    alert("bob có "+countb+"điểm");
+
+
+</script>
+</body>
+</html>
